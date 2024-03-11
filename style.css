@@ -189,10 +189,12 @@ body {
 
 .backimg {
     width: 70%;
-    height: 800px;
+    height: 900px;
+    overflow: hidden;
     position: relative;
     left: 450px;
     bottom: 340px;
+    margin-top: 30px;
     z-index: relative;
     z-index: -2;
 }
@@ -247,6 +249,9 @@ body {
 }
 
 .footer-artwork {
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    font-style: normal;
     position: relative;
     bottom: 550px;
     font-size: 3rem;
