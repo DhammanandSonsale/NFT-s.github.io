@@ -189,12 +189,11 @@ body {
 
 .backimg {
     width: 70%;
-    height: 900px;
+    height: 800px;
     overflow: hidden;
     position: relative;
     left: 450px;
-    bottom: 340px;
-    margin-top: 30px;
+    bottom: 310px;
     z-index: relative;
     z-index: -2;
 }
