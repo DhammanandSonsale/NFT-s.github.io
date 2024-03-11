@@ -1,0 +1,418 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    height: 1000px;
+    overflow-y: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Navbar */
+
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.logo {
+    height: 60px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo span {
+    position: relative;
+    left: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.opt {
+    height: 60px;
+    width: 40%;
+    font-size: 1.2rem;
+    position: relative;
+    right: 180px;
+}
+
+.opt ul {
+    display: flex;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.opt ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+
+.opt ul li a:hover {
+    color: red;
+
+}
+
+.highlight {
+
+    background-color: gold;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    border-radius: 7px;
+}
+
+#wallet {
+
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 19px;
+    background-color: rgb(241, 184, 12);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 110px;
+}
+
+#wallet:hover {
+    background-color: black;
+}
+
+.process {
+    height: 60px;
+    width: 55px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.process img {
+    height: 75px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5px;
+    right: 10px;
+
+}
+
+
+
+/* Main section */
+
+
+.main-info {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 100px;
+}
+
+.main-info ul {
+    font-size: 3rem;
+    margin-top: 80px;
+    position: relative;
+    right: 90px;
+    list-style: none;
+}
+
+.main-info p {
+    font-size: 18px;
+    margin-left: 0;
+    position: relative;
+    right: 90px;
+    top: 15px;
+}
+
+
+/* For animation of text*/
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-info ul li {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.main-info ul li:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.main-info ul li:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.main-info ul li:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.backimg {
+    width: 70%;
+    height: 800px;
+    position: relative;
+    left: 450px;
+    bottom: 340px;
+    z-index: relative;
+    z-index: -2;
+}
+
+.explore-button {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 60px;
+    bottom: 525px;
+}
+
+.explore-btn {
+    padding: 12px;
+    height: fit-content;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 19px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.videoplay {
+    height: 60px;
+    width: 18%;
+    display: flex;
+    position: relative;
+    left: 220px;
+    bottom: 583px;
+}
+
+.videoplay img {
+    height: 60px;
+}
+
+.videoplay span {
+    position: relative;
+    top: 18px;
+    left: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer-artwork {
+    position: relative;
+    bottom: 550px;
+    font-size: 3rem;
+    margin-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footerimg {
+    height: 350px;
+    width: 350px;
+    position: relative;
+    bottom: 500px;
+}
+
+.footerimg img {
+    height: 350px;
+    width: 350px;
+    margin-left: 15px;
+}
+
+.content {
+    display: flex;
+    background-color: transparent;
+    opacity: 0.1;
+    border: 2px solid gray;
+    border-right: transparent;
+    border-left: transparent;
+    position: relative;
+    bottom: 850px;
+    width: 50%;
+    left: 370px;
+}
+
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 img {
+    height: 60px;
+    width: 80px;
+}
+
+.content1 p {
+    font-size: 1.5rem;
+}
+
+.content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 850px;
+    left: 0px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+
+
+/* For animation of images */
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.backimg,
+.videoplay img,
+.footerimg img,
+.content1 img,
+.content3 img {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.backimg {
+    animation-delay: 1s;
+}
+
+.videoplay img {
+    animation-delay: 1.5s;
+}
+
+.footerimg img {
+    animation-delay: 2s;
+}
+
+.content1 img,
+.content3 img {
+    animation-delay: 2.5s;
+}
+
+
+.real {
+    background-color: transparent;
+    opacity: 7;
+}
+
+.content3 img {
+    height: 60px;
+    width: 80px;
+}
+
+.content3 p {
+    font-size: 1.5rem;
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.arrow {
+
+    position: relative;
+    bottom: 880px;
+    margin-left: 500px;
+
+}
+
+.arrow img {
+    height: 100px;
+    width: 120px;
+    transform: rotatex(190deg);
+    background-color: transparent;
+    opacity: 0.3;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.content1 :nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.content1 :nth-child(2) {
+    animation-delay: 1s;
+}
+
+.content3 :nth-child(3) {
+    animation-delay: 1.5s;
+}
